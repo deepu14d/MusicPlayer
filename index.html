@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/181343d381.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="music-container">
+        <h2 id="title">I'm dangerous</h2>
+        <h3 id="artist">The EverLove</h3>
+        <div class="img-container">
+          <img src="images/song-1.jpg" alt="" />
+        </div>
+        <audio src="music/song-1.mp3"></audio>
+
+        <!-- Progress bar -->
+        <div class="progress-container" id="progress-container">
+          <div class="progress-duration-meter">
+            <div id="current-time"><strong> 0:00</strong></div>
+            <div id="duration"><strong>04:01</strong></div>
+          </div>
+          <div class="progress-div" id="progress-div">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+
+        <!--Controls -->
+        <div class="music-controls">
+          <i class="fas fa-random fa-solid" title="random"></i>
+          <i class="fas fa-solid fa-backward" id="prev" title="Previous"></i>
+          <i class="fas fa-solid fa-play" id="play" title="Play"></i>
+          <i class="fas fa-solid fa-forward" id="next" title="Next"></i>
+          <i class="fas fa-solid fa-list-music" id="music-list"></i>
+        </div>
+        <div class="slider_container">
+          <i class="fa fa-volume-down fa-solid fa-2x"></i>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="99"
+            class="volume_slider"
+            onchange="setVolume()"
+          />
+          <i class="fa fa-volume-up fa-2x"></i>
+        </div>
+      </div>
+
+      <!-- <div class="spotify-list">
+        <h2>Spotify</h2>
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/0owFMC08AKVh4tSBrcSODG?utm_source=generator"
+          width="100%"
+          height="500"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        ></iframe>
+      </div> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
