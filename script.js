@@ -11,21 +11,6 @@ let total_duration = document.getElementById("duration");
 let current_time = document.getElementById("current-time");
 const progress_div = document.getElementById("progress-div");
 
-const songs = [{
-    name: "song-1",
-    title: "I'm dangerous",
-    artist: "The EverLove"
-},
-{
-    name: "song-2",
-    title: "Scars",
-    artist: "Neffex"
-},
-{
-    name: "song-3",
-    title: "Tune jo na kaha",
-    artist: "Mohit Chauhan"
-}]
 
 let isPlaying = false; 
 
@@ -121,3 +106,41 @@ let volume_slider = document.querySelector('.volume_slider');
 function setVolume(){
     music.volume = volume_slider.value / 100;
 }
+
+// function loadTrack(songIndex){
+//     clearInterval(updateTimer);
+//     reset();
+
+//     music.src = songs[songIndex].music;
+//     music.load();
+
+//     track_art.style.backgroundImage = "url(" + songs[songIndex].img + ")";
+//     track_name.textContent = songs[songIndex].name;
+//     track_artist.textContent = songs[songIndex].artist;
+//     now_playing.textContent = "Playing music " + (songIndex + 1) + " of " + songs.length;
+
+//     updateTimer = setInterval(setUpdate, 1000);
+
+//     music.addEventListener('ended', nextTrack);
+//     random_bg_color();
+// }
+
+// function random_bg_color(){
+//     let hex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e'];
+//     let a;
+
+//     function populate(a){
+//         for(let i=0; i<6; i++){
+//             let x = Math.round(Math.random() * 14);
+//             let y = hex[x];
+//             a += y;
+//         }
+//         return a;
+//     }
+//     let Color1 = populate('#');
+//     let Color2 = populate('#');
+//     var angle = 'to right';
+
+//     let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ")";
+//     document.body.style.background = gradient;
+// }

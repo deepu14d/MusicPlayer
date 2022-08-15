@@ -21,6 +21,7 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(#4299eb 0%, #35e2e8 90%);
 }
 
 .music-container {
@@ -31,7 +32,7 @@ html{
     box-shadow: 0 1.2rem 3rem 0.5rem;
     padding: 3rem;
     text-align: center;
-    background: linear-gradient(#35e2e8 0%, #0f61c0 90%);
+    background: linear-gradient(#35e2e8 0%, #4299eb 90%);
     display: inline-block;
 }
 
